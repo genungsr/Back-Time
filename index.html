@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body {
+        text-align: center;
+    }
+
+    h1 {
+        color: blue;
+    }
+
+    h3 {
+        font-size: 100px;
+        color: red;
+    }
+
+    button {
+        font-size: 20px;
+        margin: 10px;
+    }
+
+    button:hover {
+        background-color: lightblue;
+        cursor: pointer;
+        transition: 0.3s;
+    }
+
+    select {
+        font-size: 13px;
+        /* margin: 8px; */
+        padding: 5px;
+        border-radius: 5px;
+        background-color: lightgrey;
+    }
+
+    section {
+        margin: 20px;
+    }
+    p::first-line {
+        font-weight: bold;
+        font-size: 20px;
+        color: green;
+    }
+</style>
+
+<body>
+    <h1>Time Limit</h1>
+
+    <section>
+        <p>pilih waktu</p>
+        <select name="" id="pilih" onchange="pilihWaktu()">
+            <option value="10">10 detik</option>
+            <option value="20">20 detik</option>
+            <option value="30">30 detik</option>
+            <option value="40">40 detik</option>
+            <option value="50">50 detik</option>
+            <option value="60">60 detik</option>
+        </select>
+    </section>
+
+    <button onclick="mulai()">Mulai</button>
+    <!-- <button onclick="stopTimer()">stop timer</button> -->
+    <button onclick="stopInterval()">stop timer</button>
+    <button onclick="reset()">reset</button>
+    <h3 id="angka">10</h3>
+
+    <h5>&copy; 2025 Genung Project😋. All rights reserved.</h5>
+    <script src="latihan.js"></script>
+</body>
+
+</html>
